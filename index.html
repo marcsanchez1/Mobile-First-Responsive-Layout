@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile First Responsive Layout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="main-header" id="main-header">
+      <h1>Student Name</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="hero">
+        <img src="images/responsive-layout-profile.png" alt="Profile Pic" />
+        <p class="description">
+          Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in font-end
+          web development at Treehouse and am excited to put all my skill to use!
+        </p>
+      </div>
+    </header>
+    <main>
+      <section id="portfolio">
+        <h2 class="section__header">Portfolio</h2>
+        <div class="card">
+          <img src="images/portfolio-1.png" alt="Marketing Image" />
+          <h3 class="card__title">Marketing Page</h3>
+          <p class="card__description">
+            This project shows the front page of a marketing website meant for a specific business I'm interested in.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/portfolio-2.png" alt="Search Image" />
+          <h3 class="card__title">Search Page</h3>
+          <p class="card__description">
+            This project searches through a specific database to find information that the user is trying to look up.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/portfolio-3.png" alt="Travel App Image" />
+          <h3 class="card__title">Travel App</h3>
+          <p class="card__description">
+            This project compared travel times based on different transportation methods and tells you the best one.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/portfolio-4.png" alt="Favorite Spots Image" />
+          <h3 class="card__title">Map of Favorite Spots</h3>
+          <p class="card__description">
+            This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking
+            tour.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/portfolio-5.png" alt="Photo Gallery Image" />
+          <h3 class="card__title">Photo Gallery</h3>
+          <p class="card__description">
+            This project shows pictures from a recent trip to the viewer and allows them to easily navigate through
+            photos.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/portfolio-6.png" alt="Calculator Image" />
+          <h3 class="card__title">Calculator</h3>
+          <p class="card__description">
+            Someone can enter in the numbers they want, and press the big blue button and get the result.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h2 class="section__header">Contact</h2>
+      <p class="description__footer">
+        If you're interested in chatting or want more information about what I've been working on, I'd love to hear from
+        you!
+      </p>
+      <div class="contact-info__footer">
+        <p>Phone <a href="tel:1 (111) 555-1234">+1 (111) 555-1234</a></p>
+        <p>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
+      </div>
+      <div class="footer-end">
+        <h3 class="logo__footer">Student Name</h3>
+        <h3 class="back-to-top__footer"><a href="#main-header">Back To Top</a></h3>
+      </div>
+    </footer>
+  </body>
+</html>
