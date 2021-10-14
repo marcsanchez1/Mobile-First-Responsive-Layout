@@ -145,6 +145,10 @@ footer {
   color: rgba(74, 74, 74, 0.7);
 }
 
+footer h2.section__header {
+  color: rgb(74, 74, 74);
+}
+
 footer p.description__footer {
   text-align: center;
   color: rgba(74, 74, 74, 0.7);
