@@ -5,6 +5,7 @@
   scroll-behavior: smooth;
 }
 
+/* ============ Base Styles =================== */
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -28,6 +29,13 @@ h3 {
   letter-spacing: 0.1rem;
 }
 
+h2.section__header {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
 /* ============ Header =================== */
 header.main-header,
 #hero {
@@ -37,7 +45,6 @@ header.main-header,
 .wrap {
   display: flex;
   flex-direction: column;
-  max-width: 1024px;
   margin: auto;
   padding: 0 15px;
 }
@@ -89,44 +96,112 @@ nav.main-nav ul li a:hover {
   margin: 25px 0 40px;
   text-align: center;
   color: rgba(74, 74, 74, 0.7);
+  font-size: 1.5rem;
+}
+
+/* ============ Main =================== */
+main,
+footer {
+  padding: 50px 0 0;
 }
 
 /* ============ Section =================== */
 section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 15px;
-  max-width: 1024px;
-  margin: auto;
-}
-
-section h2 {
-  margin-bottom: 50px;
-  text-transform: uppercase;
+  margin: 0 15px;
 }
 
 /* ============ Card =================== */
 .card {
+  /* border: 1px solid #fff; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 50px;
 }
 
-.card h3 {
-  margin: 25px 0 10px;
+.card h3.card__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 30px 0 10px;
 }
 
 .card p.card__description {
+  font-size: 1.2rem;
   text-align: center;
   color: rgba(74, 74, 74, 0.7);
+  padding: 0 10px 50px;
+}
+
+/* ============ Footer =================== */
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #fafafa;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  font-size: 1.25rem;
+  color: rgba(74, 74, 74, 0.7);
+}
+
+footer p.description__footer {
+  text-align: center;
+  color: rgba(74, 74, 74, 0.7);
+  margin-bottom: 20px;
+}
+
+footer .contact-info__footer p {
+  margin-bottom: 15px;
+}
+
+footer .contact-info__footer p:last-child {
+  margin-bottom: 0;
+}
+
+footer .contact-info__footer p a {
+  font-weight: 700;
+  margin-left: 15px;
+  color: rgba(74, 74, 74, 0.7);
+}
+
+footer .footer-end__footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(74, 74, 74, 0.4);
+  margin-top: 50px;
+  padding-top: 40px;
+  font-size: 1rem;
+}
+
+footer .footer-end__footer h3 {
+  letter-spacing: 0rem;
+}
+
+footer .footer-end__footer .logo__footer__footer a,
+footer .footer-end__footer h3.back-to-top__footer a {
+  color: rgb(74, 74, 74);
+  font-weight: 700;
+  transition: 0.15s ease-in-out;
+}
+
+footer .footer-end__footer .logo__footer__footer a:hover,
+footer .footer-end__footer h3.back-to-top__footer a:hover {
+  color: rgba(74, 74, 74, 0.7);
+}
+
+footer .footer-end__footer h3.back-to-top__footer a {
+  text-transform: uppercase;
+}
+
+footer .footer-nav__footer {
+  display: none;
 }
 
 /* =============================================
                   MEDIA QUERIES
 ================================================ */
-/* 768px */
+/* ========== 768px ========== */
 @media (min-width: 768px) {
   nav.main-nav {
     margin-bottom: 20px;
@@ -148,23 +223,79 @@ section h2 {
   #hero .wrap {
     flex-direction: row;
     padding: 30px 15px 50px;
+    max-width: 768px;
   }
 
   #hero .wrap img {
-    width: 100%;
-    padding: 0 0 0 20px;
+    width: 150%;
+    padding-left: 20px;
   }
 
   #hero .wrap p.description {
+    font-size: 1.25rem;
     order: -1;
     margin: 0;
     text-align: left;
   }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+    margin: auto;
+  }
+
+  .card {
+    flex: 1 45%;
+    margin: 1.25%;
+  }
+
+  footer p.description__footer {
+    width: 70%;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  footer .contact-info__footer {
+    margin-top: 40px;
+  }
+
+  footer .footer-end__footer h3.back-to-top__footer a {
+    display: none;
+  }
+
+  footer .footer-nav__footer {
+    display: inline;
+  }
+
+  footer .footer-nav__footer ul {
+    display: flex;
+  }
+
+  footer .footer-nav__footer ul li {
+    list-style: none;
+    padding-right: 20px;
+  }
+
+  footer .footer-nav__footer ul li:last-child {
+    padding-right: 0;
+  }
+
+  footer .footer-nav__footer ul li a {
+    color: rgb(74, 74, 74);
+    font-weight: 700;
+    transition: 0.15s ease-in-out;
+  }
+
+  footer .footer-nav__footer ul li a:hover {
+    color: rgba(74, 74, 74, 0.7);
+  }
 }
 
-/* 1024 */
+/* ========== 1024 ========== */
 @media (min-width: 1024px) {
   header .wrap {
+    max-width: 1260px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -180,5 +311,23 @@ section h2 {
 
   nav.main-nav ul li:last-child {
     padding-right: 0;
+  }
+
+  #hero .wrap {
+    max-width: 1260px;
+    padding-top: 50px;
+  }
+
+  #hero .wrap img {
+    width: 100%;
+  }
+
+  section {
+    max-width: 1260px;
+  }
+
+  .card {
+    flex: 1 30%;
+    margin: 1.66%;
   }
 }
